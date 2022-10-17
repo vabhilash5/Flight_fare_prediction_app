@@ -1,4 +1,5 @@
 import datetime
+from matplotlib.pyplot import step
 
 import numpy as np
 import pickle
@@ -24,7 +25,7 @@ def main():
     source = st.selectbox('select source place',options=city)
     des_city = ['Cochin','Delhi', 'Hyderabad' ,'Kolkata','New Delhi']
     destination = st.selectbox('select destination place',options=des_city)
-    total_stops = st.number_input('total stops')
+    total_stops = st.number_input('total stops',step=1)
     dep_date = st.date_input('departure date',datetime.date(2020,5,21))
     dep_time =st.time_input('departure time',datetime.time(5,6,30))
     arr_date = st.date_input('arrival date',datetime.date(2020,5,21))
