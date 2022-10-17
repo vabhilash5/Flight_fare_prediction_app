@@ -31,7 +31,7 @@ def main():
     arr_date = st.date_input('arrival date',datetime.date(2020,5,21))
     arr_time =st.time_input('arrival time',datetime.time(5,6,30))
 
-    pred=0
+    pred=[0]
     if st.button('predict'):
         lst=[0,0,0,0]
         if source!='Banglore':
@@ -51,6 +51,6 @@ def main():
         inp = [total_stops,dep_hrs,arr_hrs,result]+lst_2+lst+lst1
 
         pred = model.predict([inp])
-    st.success('the output is predicted {}'.format(pred[0]))
+        st.success('the output is predicted {}'.format(pred[0]))
 if __name__ == '__main__':
     main()
