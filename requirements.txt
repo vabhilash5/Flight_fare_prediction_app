@@ -2,4 +2,3 @@ numpy == 1.20.3
 pandas == 1.4.4
 datetime
 streamlit
-pickle == 4.0
