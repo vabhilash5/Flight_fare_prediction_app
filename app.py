@@ -23,7 +23,7 @@ def main():
     Airline = st.selectbox('select Airline',options=airline)
     
     source = st.selectbox('select source place',options=city)
-    des_city = ['Cochin','Delhi', 'Hyderabad' ,'Kolkata','New Delhi']
+    des_city = ['Banglore','Cochin','Delhi', 'Hyderabad' ,'Kolkata','New Delhi']
     destination = st.selectbox('select destination place',options=des_city)
     total_stops = st.number_input('total stops',step=1)
     dep_date = st.date_input('departure date',datetime.date(2020,5,21))
