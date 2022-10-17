@@ -15,7 +15,7 @@ def predict_(row):
     return prediction
 
 def main():
-    st.title('Flight Price Prediction')
+    st.title('Flight Fare Prediction')
     city= ['Banglore', 'Chennai', 'Delhi', 'Kolkata','Mumbai']
     airline= [ 'Air India', 'GoAir', 'IndiGo', 'Jet Airways', 'Jet Airways Business','Multiple carriers','Multiple carriers Premium economy', 'SpiceJet', 'Trujet','Vistara', 
        'Vistara Premium economy']
