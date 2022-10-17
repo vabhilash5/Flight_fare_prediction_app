@@ -51,6 +51,6 @@ def main():
         inp = [total_stops,dep_hrs,arr_hrs,result]+lst_2+lst+lst1
 
         pred = model.predict([inp])
-        st.success('the output is predicted {}'.format(pred[0]))
+        st.success('Fare predicted Rs.{}'.format(pred[0]))
 if __name__ == '__main__':
     main()
